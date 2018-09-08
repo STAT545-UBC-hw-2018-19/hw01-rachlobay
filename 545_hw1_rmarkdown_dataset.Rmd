@@ -86,6 +86,12 @@ We can use ggplot to discern the **Petal.Widths** and **Petal.Lengths** for each
 ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_point()
 ```
 
+If we wanted to connect the points by using lines, we simply tack on **geom_line()** onto the end of the previous function
+
+```{r}
+ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_point() + geom_line()
+```
+
 # Relationships between the variables
 
 If we want to see the relationships of the all the variables, we can use the simple pairs function

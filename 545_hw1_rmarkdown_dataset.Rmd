@@ -1,0 +1,110 @@
+---
+title: "hw1_gapminder"
+author: "Rachel Lobay"
+date: '2018-09-07'
+output: html_document
+---
+# An investigation of the iris data set
+
+## A quick introduction to the iris data
+
+We will load Fisher's famous iris data set, which has measurements of petal width, petal legnth, sepal width and sepal length for samples of three species of iris. 
+
+```{r}
+data("iris")
+attach(iris) # We can use attach for data we don't have to use $ to access parts of the data. For instance, instead of having to type iris$Petal.Width, we simply type Petal.Width.
+```
+
+Let's look at the dimensions of this data set.
+```{r}
+nrow(iris) # 150 total rows of iris data
+ncol(iris) # 5 columns of iris data 
+```
+
+To get a peek at the first few rows of the iris data, we can look at the first few rows using the following command.
+
+```{r}
+head(iris)
+```
+
+Alternatively, we could view the last few rows by way of the tail command.
+```{r}
+tail(iris)
+```
+
+The summary command lets us look at the the summary data which are the  Min., 1st Quartile, Median, Mean, 3rd Quartile, and Max, for the factors. Additionally, we get the number of data rows that belong to each of the species (which are setosa, versicolor, and virginica).
+```{r}
+summary(iris)
+```
+
+## Investigating the underlying distribution for the iris data
+
+Suppose we are interested in finding out whether the data is normal or not for the **Petal.Width** data. 
+
+We can look at the shape of the histogram for the **Petal.Width** data.
+
+```{r}
+hist(Petal.Width)
+```
+
+We can create side-by-side boxplots of the **Petal.Width** for the different iris species.
+
+```{r}
+boxplot(Petal.Width~Species, xlab ="Petal Width", ylab = "Iris Species")
+```
+
+
+## Using a bit of ggplot2 to visualize and analyze our data
+The ggplot2 package can also create the side-by-side boxplots.
+
+
+```{r}
+library(ggplot2)
+ggplot(iris, mapping = aes(x = Species, y = Petal.Width)) + geom_boxplot() + labs(x = "Iris Species", y = "Petal Width")
+```
+
+What ggplot allows us to do is to present data in an asthetically appealing and informative way. For instance, it is easy to add different colours for each of the iris species to the boxplot.
+
+```{r}
+library(ggplot2)
+ggplot(iris, mapping = aes(x = Species, y = Petal.Width)) + geom_boxplot(aes(fill=Species)) + labs(x = "Iris Species", y = "Petal Width")
+```
+
+The package ggplot offers many other informative plots that we can use. Let's look at a few. 
+
+For example, suppose we wanted to vizualize the relationship between **Petal.Width** and **Petal.Length**. We could use the basic ggplot code to create a plot with the data points corresponding to the **Petal.Width** and **Petal.Length**.
+
+```{r}
+ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) + geom_point()
+```
+
+Ok. That's pretty basic. Recall that there are three species in the iris data set: setosa, versicolor, and virginica.
+
+We can use ggplot to discern the **Petal.Widths** and **Petal.Lengths** for each of the species by using color to represent the species. 
+
+```{r}
+ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_point()
+```
+
+If we wanted to connect the points by using lines, we simply tack on **geom_line()** onto the end of the previous function
+
+```{r}
+ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_point() + geom_line()
+```
+
+# Relationships between the variables
+
+If we want to see the relationships of the all the variables, we can use the simple pairs function
+
+```{r}
+pairs(iris)
+```
+
+## Regression model 
+
+To investigate the impact of the other variables on **Petal.Width**, we can create a regression model for **Petal.Width** on **Petal.Length**, **Sepal.Length**, and **Sepal.Width**. We can compare the resulting p-values to a significance level (typically, $\alpha = 0.05$) to see if the Petal.Length, Sepal.Length, and Sepal.Width impact the **Petal.Width** for our chosen signficance level. 
+
+```{r}
+fit <- lm(Petal.Width ~ Petal.Length + Sepal.Length + Sepal.Width)
+summary(fit)
+```

@@ -15,7 +15,10 @@ First Header | Navigation
 ## Who am I
 ![Rachel](Rachel.png)
 
-My GitHub account is @rachlobay. I ~~sometimes~~ like to code.
+- My GitHub account is [@rachlobay](https://github.com/rachlobay)
+- I ~~sometimes~~ like to code.
+	+ I have dabbled in R, Java, and Python.
+
 
 ### A few things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 

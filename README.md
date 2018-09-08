@@ -18,6 +18,7 @@ First Header | Navigation
 - My GitHub account is [@rachlobay](https://github.com/rachlobay)
 - I ~~sometimes~~ like to code.
 	+ I have dabbled in R, Java, and Python.
+	+ Since I only know a handful of programming languages, I am interested in learning about others. I want to learn **MATLAB** eventually!
 
 
 ### A few things I enjoy

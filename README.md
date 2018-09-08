@@ -3,7 +3,7 @@
 ## What is this repository for?
 This repository is for my Homework #1 for my [STAT 545A](http://stat545.com) class at UBC. The objective of Homework #1 task is to Edit README.md and Use R Markdown. 
 
-This is a line from RStudio.
+This is a line that was pushed from RStudio.
 
 Navigation for places on this page is below:
 

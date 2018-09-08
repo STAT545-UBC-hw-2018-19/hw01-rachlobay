@@ -15,7 +15,7 @@ First Header | Navigation
 :wave: | [The end](#the-end)
 
 ## Who am I
-![Rachel](Rachel.png)
+![Rachel](images/Rachel.png)
 
 - My GitHub account is [@rachlobay](https://github.com/rachlobay)
 - I ~~sometimes~~ like to code.
@@ -49,5 +49,5 @@ What you want to do is complete tasks:
 - [x] That's all folks!
 
 ## The end.
-![savvy](savvy.gif)
+![savvy](images/savvy.gif)
 

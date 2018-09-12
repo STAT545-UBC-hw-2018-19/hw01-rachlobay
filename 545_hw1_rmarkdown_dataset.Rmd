@@ -2,13 +2,18 @@
 title: "hw1_gapminder"
 author: "Rachel Lobay"
 date: '2018-09-07'
-output: html_document
+output:
+  html_document:
+    theme: cerulean
+    toc: true
+    toc_float: true
+    number_sections: true
 ---
 # An investigation of the iris data set
 
 ## A quick introduction to the iris data
 
-We will load Fisher's famous iris data set, which has measurements of petal width, petal legnth, sepal width and sepal length for samples of three species of iris. 
+We will load Fisher's famous iris data set, which has measurements of petal width, petal length, sepal width and sepal length for samples of three species of iris. 
 
 ```{r}
 data("iris")
@@ -96,7 +101,7 @@ pairs(iris)
 
 ## Regression model 
 
-To investigate the impact of the other variables on **Petal.Width**, we can create a regression model for **Petal.Width** on **Petal.Length**, **Sepal.Length**, and **Sepal.Width**. We can compare the resulting p-values to a significance level (typically, $\alpha = 0.05$) to see if the Petal.Length, Sepal.Length, and Sepal.Width impact the **Petal.Width** for our chosen signficance level. 
+To investigate the impact of the other variables on **Petal.Width**, we can create a regression model for **Petal.Width** on **Petal.Length**, **Sepal.Length**, and **Sepal.Width**. We can compare the resulting p-values to a significance level (typically, $\alpha = 0.05$) to see if the **Petal.Length**, **Sepal.Length**, and **Sepal.Width** impact the **Petal.Width** for our chosen signficance level. 
 
 ```{r}
 fit <- lm(Petal.Width ~ Petal.Length + Sepal.Length + Sepal.Width)

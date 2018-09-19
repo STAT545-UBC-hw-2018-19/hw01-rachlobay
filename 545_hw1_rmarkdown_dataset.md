@@ -4,9 +4,7 @@ author: "Rachel Lobay"
 date: '2018-09-07'
 output:
   html_document:
-    theme: cerulean
     toc: true
-    toc_float: true
     number_sections: true
     keep_md : true
 ---

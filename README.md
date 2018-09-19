@@ -10,7 +10,7 @@ This repository is for my Homework #1 for my [STAT 545A](http://stat545.com) cla
 
 Navigation for other important locations for Homework #1 is below.
 
- | Major Links for Homework #1 (Other than the ReadMe.md)
+ | Major Links for Homework #1 |
 ------------ | -------------
  :seedling: | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.md) 
  :seedling: | [Iris Data Exploration (.Rmd)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.Rmd)
@@ -19,7 +19,7 @@ Navigation for other important locations for Homework #1 is below.
 
 Navigation for places on this page is below.
 
- | Navigate to Places on This Page
+ | Navigate to Places on This Page |
 ------------ | -------------
 :woman: | [Who am I?](#who-am-i) 
 :thumbsup: | [Some things I enjoy.](#a-few-things-i-enjoy)

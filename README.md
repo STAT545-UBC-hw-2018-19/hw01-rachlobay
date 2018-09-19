@@ -55,7 +55,7 @@ Navigation for places on this page is below.
   
         - :point_down: Where the equations are from (click the logo): 
         
-        ![Code Cogs Logo](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
+        [![Code Cogs Logo](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
 
 ### A few other things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 

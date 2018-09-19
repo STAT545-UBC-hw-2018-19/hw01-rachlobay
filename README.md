@@ -27,35 +27,42 @@ First Header | Navigation
 	+ I have dabbled in R, Java, and Python.
 	+ Since I only know a handful of programming languages, I am interested in learning about others. I want to learn **MATLAB** eventually!
 - I majored in math in undergrad.
-	+ A lot of people think that that Euler's identity is the most beautiful equation in the world. In it, there are five numbers that are very important in the math world and three basic operations (+,- and *).
+	+ A lot of people think that that Euler's identity, <img src="https://latex.codecogs.com/gif.latex?e^{i\pi}&plus;1&space;=&space;0" title="e^{i\pi}+1 = 0" />, is the most beautiful equation in the world. In it, there are five numbers that are very important in the math world and three basic operations (+,- and *).
 	
-	$e^{i\pi}+1 = 0$
 	You can read more about that equation [here](https://www.livescience.com/51399-eulers-identity.html).
 	
 	> "Euler's identity is amazing because it is simple to look at and yet incredibly profound" - David Percy 
 	
-	+ Can you name the following equations? Highlight the line underneath the equation to reveal the answer.
-
-
-  $$a^2 + b^2 = c^2 
-  \\ \color{white} {\text{Pythagorean Theorem}}$$
+	+ Can you name the following equations? Highlight the right of the equation to reveal the answer.
+	
+        - <img src="https://latex.codecogs.com/gif.latex?a^2&space;&plus;&space;b^2&space;=&space;c^2" title="a^2 + b^2 = c^2" /> <span style="color:white"> Pythagorean Theorem</span>
   
-  $$\int_{b}^{a} f'(x)dx = f(b) - f(a)
-  \color{white} {\text{Fundamental Theorem of Calculus}}$$ 
+        - <img src="https://latex.codecogs.com/gif.latex?\int_{b}^{a}&space;f'(x)dx&space;=&space;f(b)&space;-&space;f(a)" title="\int_{b}^{a} f'(x)dx = f(b) - f(a)" /> <span style="color:white"> Fundamental Theorem of Calculus</span>
+
   
   $$ F(n) = \frac{\varphi ^{n}-\left (-\frac{1}{\varphi} \right )^n}{\sqrt{5}} 
   \\ \color{white} {\text{Fibonacci Sequence Formula}}$$
   
+        - <img src="https://latex.codecogs.com/gif.latex?1&space;&plus;&space;\frac{1}{2}&space;&plus;&space;\frac{1}{3}&space;&plus;&space;\frac{1}{4}&space;&plus;&space;\frac{1}{5}&space;&plus;&space;\frac{1}{6}&space;&plus;&space;...&space;=&space;\infty" title="1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} + ... = \infty" /> <span style="color:white"> Harmonic Series</span>
+  
   $$1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6}  + ... = \infty  
   \\ \color{white} {\text{Harmonic Series}}$$
   
+        - <img src="https://latex.codecogs.com/gif.latex?\int_{-\infty}^{\infty}e^{-x^2}dx&space;=&space;\sqrt{\pi}" title="\int_{-\infty}^{\infty}e^{-x^2}dx = \sqrt{\pi}" /> <span style="color:white"> Gaussian Integral</span>
+  
   $$\int_{-\infty}^{\infty}e^{-x^2}dx = \sqrt{\pi}
   \\ \color{white} {\text{Gaussian Integral}}$$
-
-  $$\oint P(x,y) dx + Q(x,y) dy = \int \int \left ( \frac{dQ}{dx} - \frac{dP}{dy} \right ) dx dy
+  
+        - <img src="https://latex.codecogs.com/gif.latex?\oint&space;P(x,y)&space;dx&space;&plus;&space;Q(x,y)&space;dy&space;=&space;\int&space;\int&space;\left&space;(&space;\frac{dQ}{dx}&space;-&space;\frac{dP}{dy}&space;\right&space;)&space;dx&space;dy" title="\oint P(x,y) dx + Q(x,y) dy = \int \int \left ( \frac{dQ}{dx} - \frac{dP}{dy} \right ) dx dy" /><span style="color:white"> Green's Theorem</span>
+        
+       $$ \oint P(x,y) dx + Q(x,y) dy = \int \int \left ( \frac{dQ}{dx} - \frac{dP}{dy} \right ) dx dy
   \\ \color{white} {\text{Green's Theorem}}$$
   
-  FI once had a teacher who wouldn't mind a tattoo of this form
+  FYI: I had a teacher who said if he were ever to get a tattoo, it would be the last equation.
+  
+  
+  Linked logo: [![alt text](/poweredbycc.gif)]
+(https://www.codecogs.com/latex/eqneditor.php "Code Cogs Online LaTeX Equation Editor")
 
 ### A few things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 

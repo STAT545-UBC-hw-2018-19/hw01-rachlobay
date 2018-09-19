@@ -187,7 +187,7 @@ That said, we rarely just look at the summary statistics for a data set and leav
 
 Let's see if plots match our observations.
 
-### 2. Investigating the box plots for the iris data
+### Investigating the box plots for the iris data
 
 We can create side-by-side box plots of the **Petal.Width** for the different iris species.
 
@@ -201,7 +201,7 @@ boxplot(Petal.Width~Species, xlab ="Petal Width", ylab = "Iris Species", main = 
 
 What can we discern from these box plots? The virginica species has the largest petal widths, whereas setosa has the smallest petal widths from this sample.
 
-### 3. Using a bit of ggplot2 to visualize and analyze our data
+### Using a bit of ggplot2 to visualize and analyze our data
 The ggplot2 package can also create the side-by-side box plots.
 
 
@@ -268,7 +268,7 @@ ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_poi
 
 ![](545_hw1_rmarkdown_dataset_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
-### 4. Relationships between the variables
+### Relationships between the variables
 
 If we want to see the relationships of the all the variables, we can use the simple pairs function. We can examine this plot to see if there are any relationships that indicate **collinearity**, which could mess up the coefficients of our estimates when we do regression.
 
@@ -279,7 +279,7 @@ pairs(iris)
 
 ![](545_hw1_rmarkdown_dataset_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
 
-### 5. Regression model 
+### Regression model 
 The pairs plot leads us into the last topic, which is regression. 
 
 To investigate the impact of the other variables on **Petal.Width**, we can create a regression model for **Petal.Width** on **Petal.Length**, **Sepal.Length**, and **Sepal.Width**. We can compare the resulting p-values to a significance level (typically, $\alpha = 0.05$) to see if the **Petal.Length**, **Sepal.Length**, and **Sepal.Width** impact the **Petal.Width** for our chosen signficance level. 

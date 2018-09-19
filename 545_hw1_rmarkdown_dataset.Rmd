@@ -4,15 +4,22 @@ author: "Rachel Lobay"
 date: '2018-09-07'
 output:
   html_document:
+    keep_md: yes
     theme: cerulean
-    toc: true
-    toc_float: true
-    number_sections: true
-    keep_md : true
+    toc: yes
+    toc_float: yes
+  md_document: null
 ---
 # An investigation of the iris data set
 
-## A quick introduction to the iris data
+## Table of Contents:
+1. [A quick introduction to the iris data](#a-quick-introduction-to-the-iris-data)
+2. [Investigating the underlying distribution for the iris data](#investigating-the-underlying-distribution-for-the-iris-data)
+3. [Using a bit of ggplot2 to visualize and analyze our data](#using-a-bit-of-ggplot2-to-visualize-and-analyze-our-data)
+4. [Relationships between the variables](#relationships-between-the-variables)
+5. [Regression Model](#regression-model)
+
+## 1. A quick introduction to the iris data
 
 We will load Fisher's famous iris data set, which has measurements of petal width, petal length, sepal width and sepal length for samples of three species of iris. 
 
@@ -43,7 +50,7 @@ The summary command lets us look at the the summary data which are the  Min., 1s
 summary(iris)
 ```
 
-## Investigating the underlying distribution for the iris data
+## 2. Investigating the underlying distribution for the iris data
 
 Suppose we are interested in finding out whether the data is normal or not for the **Petal.Width** data. 
 
@@ -60,7 +67,7 @@ boxplot(Petal.Width~Species, xlab ="Petal Width", ylab = "Iris Species")
 ```
 
 
-## Using a bit of ggplot2 to visualize and analyze our data
+## 3. Using a bit of ggplot2 to visualize and analyze our data
 The ggplot2 package can also create the side-by-side boxplots.
 
 
@@ -92,7 +99,7 @@ We can use ggplot to discern the **Petal.Widths** and **Petal.Lengths** for each
 ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_point()
 ```
 
-## Relationships between the variables
+## 4. Relationships between the variables
 
 If we want to see the relationships of the all the variables, we can use the simple pairs function
 
@@ -100,7 +107,7 @@ If we want to see the relationships of the all the variables, we can use the sim
 pairs(iris)
 ```
 
-## Regression model 
+## 5. Regression model 
 
 To investigate the impact of the other variables on **Petal.Width**, we can create a regression model for **Petal.Width** on **Petal.Length**, **Sepal.Length**, and **Sepal.Width**. We can compare the resulting p-values to a significance level (typically, $\alpha = 0.05$) to see if the **Petal.Length**, **Sepal.Length**, and **Sepal.Width** impact the **Petal.Width** for our chosen signficance level. 
 

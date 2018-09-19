@@ -4,13 +4,22 @@ author: "Rachel Lobay"
 date: '2018-09-07'
 output:
   html_document:
-    toc: true
-    number_sections: true
-    keep_md : true
+    keep_md: yes
+    theme: cerulean
+    toc: yes
+    toc_float: yes
+  md_document: null
 ---
 # An investigation of the iris data set
 
-## A quick introduction to the iris data
+## Table of Contents:
+1. [A quick introduction to the iris data](#a-quick-introduction-to-the-iris-data)
+2. [Investigating the underlying distribution for the iris data](#investigating-the-underlying-distribution-for-the-iris-data)
+3. [Using a bit of ggplot2 to visualize and analyze our data](#using-a-bit-of-ggplot2-to-visualize-and-analyze-our-data)
+4. [Relationships between the variables](#relationships-between-the-variables)
+5. [Regression Model](#regression-model)
+
+## 1. A quick introduction to the iris data
 
 We will load Fisher's famous iris data set, which has measurements of petal width, petal length, sepal width and sepal length for samples of three species of iris. 
 
@@ -94,7 +103,7 @@ summary(iris)
 ## 
 ```
 
-## Investigating the underlying distribution for the iris data
+## 2. Investigating the underlying distribution for the iris data
 
 Suppose we are interested in finding out whether the data is normal or not for the **Petal.Width** data. 
 
@@ -117,7 +126,7 @@ boxplot(Petal.Width~Species, xlab ="Petal Width", ylab = "Iris Species")
 ![](545_hw1_rmarkdown_dataset_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 
-## Using a bit of ggplot2 to visualize and analyze our data
+## 3. Using a bit of ggplot2 to visualize and analyze our data
 The ggplot2 package can also create the side-by-side boxplots.
 
 
@@ -161,7 +170,7 @@ ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_poi
 
 ![](545_hw1_rmarkdown_dataset_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
-## Relationships between the variables
+## 4. Relationships between the variables
 
 If we want to see the relationships of the all the variables, we can use the simple pairs function
 
@@ -172,7 +181,7 @@ pairs(iris)
 
 ![](545_hw1_rmarkdown_dataset_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
-## Regression model 
+## 5. Regression model 
 
 To investigate the impact of the other variables on **Petal.Width**, we can create a regression model for **Petal.Width** on **Petal.Length**, **Sepal.Length**, and **Sepal.Width**. We can compare the resulting p-values to a significance level (typically, $\alpha = 0.05$) to see if the **Petal.Length**, **Sepal.Length**, and **Sepal.Width** impact the **Petal.Width** for our chosen signficance level. 
 

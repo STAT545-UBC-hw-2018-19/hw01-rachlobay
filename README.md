@@ -45,13 +45,13 @@ First Header | Navigation
   
         - <img src="https://latex.codecogs.com/gif.latex?\oint&space;P(x,y)&space;dx&space;&plus;&space;Q(x,y)&space;dy&space;=&space;\int&space;\int&space;\left&space;(&space;\frac{dQ}{dx}&space;-&space;\frac{dP}{dy}&space;\right&space;)&space;dx&space;dy" title="Green's Theorem"/>
    
-        - **FYI:** I had a teacher who said that if he were to get a tattoo, it would be of the last equation :point_up:.
+        - **FYI:** I had a teacher who said that if he were to get a tattoo, it would be of the last equation.
   
-	+ Where the equations are from (click the logo :point_down:):
+        - :point_down: Where the equations are from (click the logo):
  
-  [![Alt text](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
+        - [![Alt text](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
 
-### A few things I enjoy
+### A few other things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 
 
 ### Pirates of the Caribbean

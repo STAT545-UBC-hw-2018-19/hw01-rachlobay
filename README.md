@@ -33,21 +33,21 @@ First Header | Navigation
 	
 	> "Euler's identity is amazing because it is simple to look at and yet incredibly profound" - David Percy 
 	
-	+ Can you name the following equations? Highlight **below** the equation to reveal the answer.
+	+ Can you name the following equations? Hover over the equation to reveal the answer.
 	
-        - <img src="https://latex.codecogs.com/gif.latex?a^2&space;&plus;&space;b^2&space;=&space;c^2" title="a^2 + b^2 = c^2" /> <img src="https://latex.codecogs.com/gif.latex?{\color{White}&space;Pythagorean~Theorem}" title="{\color{White} Pythagorean~Theorem}" />
+        - <img src="https://latex.codecogs.com/gif.latex?a^2&space;&plus;&space;b^2&space;=&space;c^2" title="Pythagorean Theorem"/>
   
-        - <img src="https://latex.codecogs.com/gif.latex?\int_{b}^{a}&space;f'(x)dx&space;=&space;f(b)&space;-&space;f(a)" title="\int_{b}^{a} f'(x)dx = f(b) - f(a)" /> <span style="color:white"> Fundamental Theorem of Calculus</span>
+        - <img src="https://latex.codecogs.com/gif.latex?\int_{b}^{a}&space;f'(x)dx&space;=&space;f(b)&space;-&space;f(a)" title="Fundamental Theorem of Calculus"/>
   
-        - <img src="https://latex.codecogs.com/gif.latex?1&space;&plus;&space;\frac{1}{2}&space;&plus;&space;\frac{1}{3}&space;&plus;&space;\frac{1}{4}&space;&plus;&space;\frac{1}{5}&space;&plus;&space;\frac{1}{6}&space;&plus;&space;...&space;=&space;\infty" title="1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} + ... = \infty" /> <span style="color:white"> Harmonic Series</span>
+        - <img src="https://latex.codecogs.com/gif.latex?1&space;&plus;&space;\frac{1}{2}&space;&plus;&space;\frac{1}{3}&space;&plus;&space;\frac{1}{4}&space;&plus;&space;\frac{1}{5}&space;&plus;&space;\frac{1}{6}&space;&plus;&space;...&space;=&space;\infty" title="Harmonic Series"/>
   
-        - <img src="https://latex.codecogs.com/gif.latex?\int_{-\infty}^{\infty}e^{-x^2}dx&space;=&space;\sqrt{\pi}" title="\int_{-\infty}^{\infty}e^{-x^2}dx = \sqrt{\pi}" /> <span style="color:white"> Gaussian Integral</span>
+        - <img src="https://latex.codecogs.com/gif.latex?\int_{-\infty}^{\infty}e^{-x^2}dx&space;=&space;\sqrt{\pi}" title="Gaussian Integral"/>
   
-        - <img src="https://latex.codecogs.com/gif.latex?\oint&space;P(x,y)&space;dx&space;&plus;&space;Q(x,y)&space;dy&space;=&space;\int&space;\int&space;\left&space;(&space;\frac{dQ}{dx}&space;-&space;\frac{dP}{dy}&space;\right&space;)&space;dx&space;dy" title="\oint P(x,y) dx + Q(x,y) dy = \int \int \left ( \frac{dQ}{dx} - \frac{dP}{dy} \right ) dx dy" /> <span style="color:white"> Green's Theorem</span>
+        - <img src="https://latex.codecogs.com/gif.latex?\oint&space;P(x,y)&space;dx&space;&plus;&space;Q(x,y)&space;dy&space;=&space;\int&space;\int&space;\left&space;(&space;\frac{dQ}{dx}&space;-&space;\frac{dP}{dy}&space;\right&space;)&space;dx&space;dy" title="Green's Theorem"/>
    
-        - **FYI:** I had a teacher who said the last equation is so great that he's thinking of getting a tattoo of it.
+        - **FYI:** I had a teacher who said that if he were to get a tattoo, it would be of the last equation :point_up:.
   
-	+ Where the equations are from (click the logo):
+	+ Where the equations are from (click the logo :point_down:):
  
   [![Alt text](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
 

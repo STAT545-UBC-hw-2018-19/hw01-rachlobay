@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 # README for Homework 1
 
 ## What is this repository for?
@@ -21,7 +26,36 @@ First Header | Navigation
 - I ~~sometimes~~ like to code.
 	+ I have dabbled in R, Java, and Python.
 	+ Since I only know a handful of programming languages, I am interested in learning about others. I want to learn **MATLAB** eventually!
+- I majored in math in undergrad.
+	+ A lot of people think that that Euler's identity is the most beautiful equation in the world. In it, there are five numbers that are very important in the math world and three basic operations (+,- and *).
+	
+	$e^{i\pi}+1 = 0$
+	You can read more about that equation [here](https://www.livescience.com/51399-eulers-identity.html).
+	
+	> "Euler's identity is amazing because it is simple to look at and yet incredibly profound" - David Percy 
+	
+	+ Can you name the following equations? Highlight the line underneath the equation to reveal the answer.
 
+
+  $$a^2 + b^2 = c^2 
+  \\ \color{white} {\text{Pythagorean Theorem}}$$
+  
+  $$\int_{b}^{a} f'(x)dx = f(b) - f(a)
+  \color{white} {\text{Fundamental Theorem of Calculus}}$$ 
+  
+  $$ F(n) = \frac{\varphi ^{n}-\left (-\frac{1}{\varphi} \right )^n}{\sqrt{5}} 
+  \\ \color{white} {\text{Fibonacci Sequence Formula}}$$
+  
+  $$1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6}  + ... = \infty  
+  \\ \color{white} {\text{Harmonic Series}}$$
+  
+  $$\int_{-\infty}^{\infty}e^{-x^2}dx = \sqrt{\pi}
+  \\ \color{white} {\text{Gaussian Integral}}$$
+
+  $$\oint P(x,y) dx + Q(x,y) dy = \int \int \left ( \frac{dQ}{dx} - \frac{dP}{dy} \right ) dx dy
+  \\ \color{white} {\text{Green's Theorem}}$$
+  
+  FI once had a teacher who wouldn't mind a tattoo of this form
 
 ### A few things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 

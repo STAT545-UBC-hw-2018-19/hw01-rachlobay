@@ -8,11 +8,18 @@ output:
 ## What is this repository for?
 This repository is for my Homework #1 for my [STAT 545A](http://stat545.com) class at UBC. The objective of Homework #1 task is to Edit README.md and Use R Markdown. 
 
-This is a line that was pushed from RStudio.
+Navigation for other important locations for Homework #1 is below.
 
-Navigation for places on this page is below:
+ | Major Links for Homework #1 (Other than the ReadMe.md)
+------------ | -------------
+ :seedling: | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.md) 
+ :seedling: | [Iris Data Exploration (.Rmd)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.Rmd)
+ :seedling: | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.html)
+:camera: | [Images folder](https://github.com/STAT545-UBC-students/hw01-rachlobay/tree/master/images)
 
-First Header | Navigation
+Navigation for places on this page is below.
+
+ | Navigate to Places on This Page
 ------------ | -------------
 :woman: | [Who am I?](#who-am-i) 
 :thumbsup: | [Some things I enjoy.](#a-few-things-i-enjoy)
@@ -31,7 +38,7 @@ First Header | Navigation
 	
 	You can read more about that equation [here](https://www.livescience.com/51399-eulers-identity.html).
 	
-	> "Euler's identity is amazing because it is simple to look at and yet incredibly profound" - David Percy 
+	> "Euler's identity is amazing because it is simple to look at and yet incredibly profound." - David Percy 
 	
 	+ Can you name the following equations? Hover over the equation to reveal the answer.
 	
@@ -47,9 +54,8 @@ First Header | Navigation
    
         - **FYI:** I had a teacher who said that if he were to get a tattoo, it would be of the last equation.
   
-        - :point_down: Where the equations are from (click the logo):
- 
-        - [![Alt text](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
+        - :point_down: Where the equations are from (click the logo): 
+        [![Alt text](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
 
 ### A few other things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 
@@ -61,7 +67,11 @@ Pirates of the Caribbean is a very quotable movie:
 >
 > Jack: "I love those moments. I like to wave at them as they pass by."
 
-This video is me during exams. My grades are sinking :chart_with_downwards_trend:, but I convince myself everything is fine and part of the plan. Here is an image still with a YouTube link so you can see a Jack Sparrow clip:
+This video is me during exams. My grades are sinking :chart_with_downwards_trend:, but I convince myself everything is fine and part of the plan. 
+
+![I Regret Nothing :P](i_regret_nothing.jpg)
+
+Here is an image still with a YouTube link so you can watch the Jack Sparrow clip and see what I mean:
 
 [![](http://img.youtube.com/vi/dvdrCPr3gDQ/0.jpg)](http://www.youtube.com/watch?v=dvdrCPr3gDQ)
 

@@ -21,7 +21,7 @@ Navigation for places on this page is below.
 |               | Navigate to Places on This Page |
 | ------------- |-------------|
 |  :woman:      | [Who am I?](#who-am-i)| 
-|  :thumbsup:   | [Some things I enjoy.](#a-few-things-i-enjoy)| 
+|  :thumbsup:   | [Some things I enjoy.](#a-few-other-things-i-enjoy)| 
 |  :movie_camera:| [Pirates of the Caribbean](#pirates-of-the-caribbean)|
 |  :wave:       | [The end](#the-end)|
 

@@ -55,7 +55,8 @@ Navigation for places on this page is below.
         - **FYI:** I had a teacher who said that if he were to get a tattoo, it would be of the last equation.
   
         - :point_down: Where the equations are from (click the logo): 
-        [![Alt text](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
+        
+        ![Code Cogs Logo](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
 
 ### A few other things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 
@@ -69,21 +70,22 @@ Pirates of the Caribbean is a very quotable movie:
 
 This video is me during exams. My grades are sinking :chart_with_downwards_trend:, but I convince myself everything is fine and part of the plan. 
 
-![I Regret Nothing :P](images/i-regret-nothing.gif)
+![I Regret Nothing](images/i-regret-nothing.gif)
 
-Here is an image still with a YouTube link so you can watch the Jack Sparrow clip and see what I mean:
+Below is an image still with a YouTube link so you can watch the Jack Sparrow clip and see what I mean...
 
 [![](http://img.youtube.com/vi/dvdrCPr3gDQ/0.jpg)](http://www.youtube.com/watch?v=dvdrCPr3gDQ)
 
-Unfortunately, there doesn't seem to be a way to directly embed a YouTube video. If you would like to use the method I used, feel free to copy and modify the code below:
+Unfortunately, there doesn't seem to be a way to directly embed a YouTube video :disappointed:. If you would like to use the alternative method I used, feel free to copy and modify the code below:
 
 ```
 [![alt text for the image](http://img.youtube.com/vi/YOUTUBE_ID/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_ID)
 ```
 
-What you want to do is complete tasks:
+A checklist to complete if you want to use the YouTube video method above:
 - [ ] Find what your video code is from its url. For example, to get to the Jack Sparrow clip above the video code **isdvdrCPr3gDQ**
 - [ ] Copy and paste the video code where it says **YOUTUBE_ID** in the code block above.
+- [x] That's all folks!
 - [x] That's all folks!
 
 ## The end.

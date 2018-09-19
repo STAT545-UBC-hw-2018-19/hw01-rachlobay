@@ -229,11 +229,11 @@ The package ggplot2 offers many other informative plots that we can use. We will
 
 Let's first look at the violin plot.
 
-Note that violin plots have a similar function to box plots (we can see that they look sort of similar to box plots). However, a violin plot differ from a box plot in that a violin plots show the data distributions of the samples.
+Note that violin plots are similar in function to box plots (intuitively, we can see that they look sort of similar to box plots). However, a violin plot differ from a box plot because a violin plot show the data distributions of the samples.
 
 
 ```r
-# Note that, as before, colour is done by species 
+# Note that, as before, the colours of the plots represent the species.
 ggplot(iris, aes(x=Species, y=Petal.Width)) + geom_violin(aes(fill=Species)) + labs(x = "Petal Width", y = "Petal Length") + ggtitle("Violin Plots of Petal Widths vs. Petal Lengths for Iris Data Set")
 ```
 
@@ -271,7 +271,7 @@ ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_poi
 
 ### Relationships between the variables
 
-If we want to see the relationships of the all the variables, we can use the simple pairs function. We can examine this plot to see if there are any relationships that indicate **collinearity**, which could mess up the coefficients of our estimates when we do regression.
+If we want to see the relationships of the all the variables, we can use the pairs function. We can use the output of plots to examine the pairwise relationships of our factors and pick out the important or interesting pairwise relationships. 
 
 
 ```r
@@ -280,8 +280,10 @@ pairs(iris)
 
 ![](545_hw1_rmarkdown_dataset_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
 
+What can we see? One thing to note is that there appears to be a linear relationship between **Petal.Width** and **Petal.Length**. This makes sense because we would suspect that as petal with increases, petal length would increase too.
+
 ### Regression model 
-The pairs plot leads us into the last topic, which is regression. 
+The pairs plot leads into the last topic, which is regression. 
 
 To investigate the impact of the other variables on **Petal.Width**, we can create a regression model for **Petal.Width** on **Petal.Length**, **Sepal.Length**, and **Sepal.Width**. We can compare the resulting p-values to a significance level (typically, $\alpha = 0.05$) to see if the **Petal.Length**, **Sepal.Length**, and **Sepal.Width** impact the **Petal.Width** for our chosen signficance level. 
 
@@ -313,6 +315,8 @@ summary(fit)
 ## Multiple R-squared:  0.9379,	Adjusted R-squared:  0.9366 
 ## F-statistic: 734.4 on 3 and 146 DF,  p-value: < 2.2e-16
 ```
+
+It appears that **Petal.Length**, **Sepal.Length**, and **Sepal.Width** are all significant at $\alpha = 0.05$ significance because their respective p-values are smaller than 0.05. This means that changes in the predictor variables **Petal.Length**, **Sepal.Length**, and **Sepal.Width** are associated with changes in **Petal.Width** for our chosen level of signficance. 
 
 ### Conclusions
 

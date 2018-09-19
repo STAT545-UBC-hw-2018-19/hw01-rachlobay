@@ -38,28 +38,14 @@ First Header | Navigation
         - <img src="https://latex.codecogs.com/gif.latex?a^2&space;&plus;&space;b^2&space;=&space;c^2" title="a^2 + b^2 = c^2" /> <span style="color:white"> Pythagorean Theorem</span>
   
         - <img src="https://latex.codecogs.com/gif.latex?\int_{b}^{a}&space;f'(x)dx&space;=&space;f(b)&space;-&space;f(a)" title="\int_{b}^{a} f'(x)dx = f(b) - f(a)" /> <span style="color:white"> Fundamental Theorem of Calculus</span>
-
-  
-  $$ F(n) = \frac{\varphi ^{n}-\left (-\frac{1}{\varphi} \right )^n}{\sqrt{5}} 
-  \\ \color{white} {\text{Fibonacci Sequence Formula}}$$
   
         - <img src="https://latex.codecogs.com/gif.latex?1&space;&plus;&space;\frac{1}{2}&space;&plus;&space;\frac{1}{3}&space;&plus;&space;\frac{1}{4}&space;&plus;&space;\frac{1}{5}&space;&plus;&space;\frac{1}{6}&space;&plus;&space;...&space;=&space;\infty" title="1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} + ... = \infty" /> <span style="color:white"> Harmonic Series</span>
   
-  $$1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6}  + ... = \infty  
-  \\ \color{white} {\text{Harmonic Series}}$$
-  
         - <img src="https://latex.codecogs.com/gif.latex?\int_{-\infty}^{\infty}e^{-x^2}dx&space;=&space;\sqrt{\pi}" title="\int_{-\infty}^{\infty}e^{-x^2}dx = \sqrt{\pi}" /> <span style="color:white"> Gaussian Integral</span>
   
-  $$\int_{-\infty}^{\infty}e^{-x^2}dx = \sqrt{\pi}
-  \\ \color{white} {\text{Gaussian Integral}}$$
-  
         - <img src="https://latex.codecogs.com/gif.latex?\oint&space;P(x,y)&space;dx&space;&plus;&space;Q(x,y)&space;dy&space;=&space;\int&space;\int&space;\left&space;(&space;\frac{dQ}{dx}&space;-&space;\frac{dP}{dy}&space;\right&space;)&space;dx&space;dy" title="\oint P(x,y) dx + Q(x,y) dy = \int \int \left ( \frac{dQ}{dx} - \frac{dP}{dy} \right ) dx dy" /><span style="color:white"> Green's Theorem</span>
-        
-       $$ \oint P(x,y) dx + Q(x,y) dy = \int \int \left ( \frac{dQ}{dx} - \frac{dP}{dy} \right ) dx dy
-  \\ \color{white} {\text{Green's Theorem}}$$
   
-  FYI: I had a teacher who said if he were ever to get a tattoo, it would be the last equation.
-  
+  **FYI:** I had a teacher who said the last equation is so great that he's thinking of getting a tattoo of it.
   
   Linked logo: [![alt text](/poweredbycc.gif)]
 (https://www.codecogs.com/latex/eqneditor.php "Code Cogs Online LaTeX Equation Editor")

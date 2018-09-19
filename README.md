@@ -33,9 +33,9 @@ First Header | Navigation
 	
 	> "Euler's identity is amazing because it is simple to look at and yet incredibly profound" - David Percy 
 	
-	+ Can you name the following equations? Highlight the **right** of the equation to reveal the answer.
+	+ Can you name the following equations? Highlight **below** the equation to reveal the answer.
 	
-        - <img src="https://latex.codecogs.com/gif.latex?a^2&space;&plus;&space;b^2&space;=&space;c^2" title="a^2 + b^2 = c^2" /> <span style="color:white"> Pythagorean Theorem</span>
+        - <img src="https://latex.codecogs.com/gif.latex?a^2&space;&plus;&space;b^2&space;=&space;c^2" title="a^2 + b^2 = c^2" /> <img src="https://latex.codecogs.com/gif.latex?{\color{White}&space;Pythagorean~Theorem}" title="{\color{White} Pythagorean~Theorem}" />
   
         - <img src="https://latex.codecogs.com/gif.latex?\int_{b}^{a}&space;f'(x)dx&space;=&space;f(b)&space;-&space;f(a)" title="\int_{b}^{a} f'(x)dx = f(b) - f(a)" /> <span style="color:white"> Fundamental Theorem of Calculus</span>
   
@@ -45,10 +45,11 @@ First Header | Navigation
   
         - <img src="https://latex.codecogs.com/gif.latex?\oint&space;P(x,y)&space;dx&space;&plus;&space;Q(x,y)&space;dy&space;=&space;\int&space;\int&space;\left&space;(&space;\frac{dQ}{dx}&space;-&space;\frac{dP}{dy}&space;\right&space;)&space;dx&space;dy" title="\oint P(x,y) dx + Q(x,y) dy = \int \int \left ( \frac{dQ}{dx} - \frac{dP}{dy} \right ) dx dy" /> <span style="color:white"> Green's Theorem</span>
    
-  **FYI:** I had a teacher who said the last equation is so great that he's thinking of getting a tattoo of it.
+        - **FYI:** I had a teacher who said the last equation is so great that he's thinking of getting a tattoo of it.
   
-  Linked logo: [![alt text](images/poweredbycc.gif)]
-(https://www.codecogs.com/latex/eqneditor.php "Code Cogs Online LaTeX Equation Editor")
+	+ Where the equations are from (click the logo):
+ 
+  [![Alt text](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
 
 ### A few things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 

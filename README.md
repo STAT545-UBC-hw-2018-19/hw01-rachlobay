@@ -69,7 +69,7 @@ Pirates of the Caribbean is a very quotable movie:
 
 This video is me during exams. My grades are sinking :chart_with_downwards_trend:, but I convince myself everything is fine and part of the plan. 
 
-![I Regret Nothing :P](i_regret_nothing.jpg)
+![I Regret Nothing :P](images/i-regret-nothing.gif)
 
 Here is an image still with a YouTube link so you can watch the Jack Sparrow clip and see what I mean:
 

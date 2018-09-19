@@ -14,23 +14,16 @@ Navigation for other important locations for Homework #1 is below.
 | ------------- |-------------|
 |  :seedling:   | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.md)| 
 |  :seedling:   | [Iris Data Exploration (.Rmd)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.Rmd)| 
-| v :seedling:  | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.html)|
-
- | Major Links for Homework #1 |
------------- | -------------
- :seedling: | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.md) 
- :seedling: | [Iris Data Exploration (.Rmd)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.Rmd)
- :seedling: | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.html)
-:camera: | [Images folder](https://github.com/STAT545-UBC-students/hw01-rachlobay/tree/master/images)
+|  :seedling:  | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.html)|
 
 Navigation for places on this page is below.
 
- | Navigate to Places on This Page |
------------- | -------------
-:woman: | [Who am I?](#who-am-i) 
-:thumbsup: | [Some things I enjoy.](#a-few-things-i-enjoy)
-:movie_camera: | [Pirates of the Caribbean](#pirates-of-the-caribbean)
-:wave: | [The end](#the-end)
+|               | Navigate to Places on This Page |
+| ------------- |-------------|
+|  :woman:      | [Who am I?](#who-am-i)| 
+|  :thumbsup:   | [Some things I enjoy.](#a-few-things-i-enjoy)| 
+|  :movie_camera:| [Pirates of the Caribbean](#pirates-of-the-caribbean)|
+|  :wave:       | [The end](#the-end)|
 
 ## Who am I
 ![Rachel](images/Rachel.png)

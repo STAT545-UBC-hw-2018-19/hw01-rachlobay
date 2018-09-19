@@ -58,9 +58,9 @@ Navigation for places on this page is below.
         [![Code Cogs Logo](images/poweredbycc.gif)](https://www.codecogs.com/latex/eqneditor.php)
 
 ### A few other things I enjoy
-:airplane: :cat: :dog: :sunny: :coffee: :soccer: 
+:airplane: :cat: :dog: :sunny: :coffee: :soccer: :movie_camera:
 
-Relating to the cat and dog emojis, here are some pics of my pets, Tiger and Rosie. 
+The cat and dog emojis refer to my pets, Tiger and Rosie. 
 
 |     Tiger     | Rosie       |
 | ------------- |-------------|
@@ -69,7 +69,10 @@ Relating to the cat and dog emojis, here are some pics of my pets, Tiger and Ros
 
 ### Pirates of the Caribbean
 
-Pirates of the Caribbean is a very quotable movie:
+Referring to the movie camera emoji above, I like movies. 
+
+Pirates of the Caribbean is a very quotable movie...
+
 > Elizabeth: "There will come a time when you have a chance to do the right thing."
 >
 > Jack: "I love those moments. I like to wave at them as they pass by."

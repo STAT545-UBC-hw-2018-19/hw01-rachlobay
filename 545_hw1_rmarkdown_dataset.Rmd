@@ -6,7 +6,6 @@ output:
   html_document:
     keep_md: yes
     theme: cerulean
-    toc: yes
     toc_float: yes
   md_document: null
 ---
@@ -14,21 +13,21 @@ output:
 
 ## Table of Contents:
 1. [A quick introduction to the iris data](#a-quick-introduction-to-the-iris-data)
-2. [Investigating the underlying distribution for the iris data](#investigating-the-underlying-distribution-for-the-iris-data)
+2. [Investigating the box plots by species for the iris data](#investigating-the-box-plots-for-the-iris-data)
 3. [Using a bit of ggplot2 to visualize and analyze our data](#using-a-bit-of-ggplot2-to-visualize-and-analyze-our-data)
 4. [Relationships between the variables](#relationships-between-the-variables)
 5. [Regression Model](#regression-model)
+5. [Conclusions](#conclusions)
 
-## 1. A quick introduction to the iris data
+### A quick introduction to the iris data
 
 We will load Fisher's famous iris data set, which has measurements of petal width, petal length, sepal width and sepal length for samples of three species of iris. 
-
 ```{r}
 data("iris")
 attach(iris) # We can use attach for data we don't have to use $ to access parts of the data. For instance, instead of having to type iris$Petal.Width, we simply type Petal.Width.
 ```
 
-Let's look at the dimensions of this data set.
+First, let's look at the dimensions of this data set.
 ```{r}
 nrow(iris) # 150 total rows of iris data
 ncol(iris) # 5 columns of iris data 
@@ -37,77 +36,120 @@ ncol(iris) # 5 columns of iris data
 To get a peek at the first few rows of the iris data, we can look at the first few rows using the following command.
 
 ```{r}
+# peek at top of iris data set
 head(iris)
 ```
 
 Alternatively, we could view the last few rows by way of the tail command.
 ```{r}
+# peek at bottom of iris data set
 tail(iris)
 ```
 
-The summary command lets us look at the the summary data which are the  Min., 1st Quartile, Median, Mean, 3rd Quartile, and Max, for the factors. Additionally, we get the number of data rows that belong to each of the species (which are setosa, versicolor, and virginica).
+The head and tail commands give us a feel for the data set we are working with. We don't get the whole picture, but we may be able to notice something useful. 
+
+For example, here we may observe that the petal widths of setosa appear to be smaller than the petal widths of the flowers from the virginica species.
+
+Next, the summary command lets us look at the the summary data which are the  Min., 1st Quartile, Median, Mean, 3rd Quartile, and Max., for the factors. Additionally, we get the number of data rows that belong to each of the species (which are setosa, versicolor, and virginica).
 ```{r}
+# Summarize the iris data set all together
+# This overall summary can be very useful, but there is a lot of data to deal with... So, we will pick out something that we want to know and focus on a more precise summary of the data. 
 summary(iris)
 ```
 
-## 2. Investigating the underlying distribution for the iris data
-
-Suppose we are interested in finding out whether the data is normal or not for the **Petal.Width** data. 
-
-We can look at the shape of the histogram for the **Petal.Width** data.
+Since there are species of the iris, we can break down the summary by species. 
 
 ```{r}
-hist(Petal.Width)
+# Below are the summary statistics for setosa
+summary(iris[iris$Species == "setosa",])
 ```
-
-We can create side-by-side boxplots of the **Petal.Width** for the different iris species.
 
 ```{r}
-boxplot(Petal.Width~Species, xlab ="Petal Width", ylab = "Iris Species")
+# Below are the summary statistics for versicolor
+summary(iris[iris$Species == "versicolor",])
 ```
 
+```{r}
+# Below are the summary statistics for virginica
+summary(iris[iris$Species == "virginica",])
+```
 
-## 3. Using a bit of ggplot2 to visualize and analyze our data
-The ggplot2 package can also create the side-by-side boxplots.
+Here we can see a little bit of a clearer picture of what is going on. Since theree is a lot of data... we will keep our focus narrow. Continuing on with our petal width example from before, we can see that the virginica species has the greatest mean and median petal width whereas setosa has smallest mean and median petal widths. 
 
+That said, we rarely just look at the summary statistics for a data set and leave it at that. We often want to look at different methods and plots to analyze the data. 
+
+Let's see if plots match our observations.
+
+### 2. Investigating the box plots for the iris data
+
+We can create side-by-side box plots of the **Petal.Width** for the different iris species.
+
+```{r}
+# Basic box plots for petal widths for the different iris species with axes labels
+boxplot(Petal.Width~Species, xlab ="Petal Width", ylab = "Iris Species", main = "Petal Widths for the Three Iris Species")
+```
+
+What can we discern from these box plots? The virginica species has the largest petal widths, whereas setosa has the smallest petal widths from this sample.
+
+### 3. Using a bit of ggplot2 to visualize and analyze our data
+The ggplot2 package can also create the side-by-side box plots.
 
 ```{r}
 library(ggplot2)
-ggplot(iris, mapping = aes(x = Species, y = Petal.Width)) + geom_boxplot() + labs(x = "Iris Species", y = "Petal Width")
+
+# Notice below how ggplot2 requires a different structre to put labels on the x-axis, y-axis and to give a main title.
+ggplot(iris, mapping = aes(x = Species, y = Petal.Width)) + geom_boxplot() + labs(x = "Iris Species", y = "Petal Width") + ggtitle("Petal Widths vs. Petal Lengths for the Iris Species (Black, White, and Grey)")
 ```
 
-What ggplot allows us to do is to present data in an asthetically appealing and informative way. For instance, it is easy to add different colours for each of the iris species to the boxplot.
+What ggplot2 allows us to do is to present data in an asthetically appealing and informative way. For instance, it is easy to add different colours for each of the iris species to the box plot.
 
 ```{r}
 library(ggplot2)
-ggplot(iris, mapping = aes(x = Species, y = Petal.Width)) + geom_boxplot(aes(fill=Species)) + labs(x = "Iris Species", y = "Petal Width")
+ggplot(iris, mapping = aes(x = Species, y = Petal.Width)) + geom_boxplot(aes(fill=Species)) + labs(x = "Iris Species", y = "Petal Width") + ggtitle("Petal Widths for Iris Species (Coloured)")
 ```
 
-The package ggplot offers many other informative plots that we can use. Let's look at a few. 
+The package ggplot2 offers many other informative plots that we can use. Let's look at a few. 
 
-For example, suppose we wanted to vizualize the relationship between **Petal.Width** and **Petal.Length**. We could use the basic ggplot code to create a plot with the data points corresponding to the **Petal.Width** and **Petal.Length**.
+Let's first look at the violin plot.
+
+Note that violin plots have a similar function to box plots (we can see that they look sort of similar to box plots). However, a violin plot differ from a box plot in that a violin plots show the data distributions of the samples.
 
 ```{r}
-ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) + geom_point()
+# Note that, as before, colour is done by species 
+ggplot(iris, aes(x=Species, y=Petal.Width)) + geom_violin(aes(fill=Species)) + labs(x = "Petal Width", y = "Petal Length") + ggtitle("Violin Plots of Petal Widths vs. Petal Lengths for Iris Data Set")
+```
+
+In the above image, the violin plots look more like a lamps and don't appear to provide anything useful. Didn't we say they were like box plots? Therefore, shouldn't violin plots provide the same information as box plots? Note that we can add box plots to the violin plots as follows...
+
+```{r}
+# Note we only added the geom_boxplot() code. Nothing else changed from above. 
+ggplot(iris, aes(x=Species, y=Petal.Width)) + geom_violin(aes(fill=Species)) + geom_boxplot(width=0.2) + labs(x = "Petal Width", y = "Petal Length") + ggtitle("Violin Plots of Petal Widths vs. Petal Lengths for Iris Data Set")
+```
+
+In another example, suppose we want to see the relationship between **Petal.Width** and **Petal.Length**. We could use the basic ggplot code to create a plot with the data points corresponding to the **Petal.Width** and **Petal.Length**.
+
+```{r}
+ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) + geom_point() + labs(x = "Petal Width", y = "Petal Length") + ggtitle("Petal Widths vs. Petal Lengths for Iris Data Set")
 ```
 
 Ok. That's pretty basic. Recall that there are three species in the iris data set: setosa, versicolor, and virginica.
 
-We can use ggplot to discern the **Petal.Widths** and **Petal.Lengths** for each of the species by using color to represent the species. 
+We can use ggplot2 to discern the **Petal.Widths** and **Petal.Lengths** for each of the species by using color to represent the species. Now we're getting somewhere.
 
 ```{r}
-ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_point()
+ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + geom_point() + labs(x = "Petal Width", y = "Petal Length") + ggtitle("Petal Widths vs. Petal Lengths for Species of Iris")
 ```
 
-## 4. Relationships between the variables
+### 4. Relationships between the variables
 
-If we want to see the relationships of the all the variables, we can use the simple pairs function
+If we want to see the relationships of the all the variables, we can use the simple pairs function. We can examine this plot to see if there are any relationships that indicate **collinearity**, which could mess up the coefficients of our estimates when we do regression.
 
 ```{r}
 pairs(iris)
 ```
 
-## 5. Regression model 
+### 5. Regression model 
+The pairs plot leads us into the last topic, which is regression. 
 
 To investigate the impact of the other variables on **Petal.Width**, we can create a regression model for **Petal.Width** on **Petal.Length**, **Sepal.Length**, and **Sepal.Width**. We can compare the resulting p-values to a significance level (typically, $\alpha = 0.05$) to see if the **Petal.Length**, **Sepal.Length**, and **Sepal.Width** impact the **Petal.Width** for our chosen signficance level. 
 
@@ -115,3 +157,7 @@ To investigate the impact of the other variables on **Petal.Width**, we can crea
 fit <- lm(Petal.Width ~ Petal.Length + Sepal.Length + Sepal.Width)
 summary(fit)
 ```
+
+### 6. Conclusions
+
+We investigated the iris data set by looking at a couple of the key functions, plots and models that showed us some of the relationships between the variables. There is still a lot more that can be done, but that can be saved for a tim

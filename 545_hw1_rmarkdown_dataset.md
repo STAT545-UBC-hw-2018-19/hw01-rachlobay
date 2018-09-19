@@ -85,7 +85,7 @@ The head and tail commands give us a feel for the data set we are working with. 
 
 For example, here we may observe that the petal widths of setosa appear to be smaller than the petal widths of the flowers from the virginica species.
 
-Next, the summary command lets us look at the the summary data which are the  Min., 1st Quartile, Median, Mean, 3rd Quartile, and Max., for the factors. Additionally, we get the number of data rows that belong to each of the species (which are setosa, versicolor, and virginica).
+Next, the summary command lets us look at the the summary statistics including the eMin., 1st Quartile, Median, Mean, 3rd Quartile, and Max., for the factors. Additionally, we get the number of data rows that belong to each of the species (which are setosa, versicolor, and virginica).
 
 ```r
 # Summarize the iris data set all together
@@ -110,11 +110,12 @@ summary(iris)
 ## 
 ```
 
-Since there are species of the iris, we can break down the summary by species. 
+Since there are species of the iris, we can summarize the data for the species. 
 
+Below are the summary statistics for setosa.
 
 ```r
-# Below are the summary statistics for setosa
+# Note: the only code that was changed for thre 3 summaries was the species. 
 summary(iris[iris$Species == "setosa",])
 ```
 
@@ -135,9 +136,9 @@ summary(iris[iris$Species == "setosa",])
 ## 
 ```
 
+Below are the summary statistics for versicolor.
 
 ```r
-# Below are the summary statistics for versicolor
 summary(iris[iris$Species == "versicolor",])
 ```
 
@@ -158,9 +159,9 @@ summary(iris[iris$Species == "versicolor",])
 ## 
 ```
 
+Below are the summary statistics for virginica.
 
 ```r
-# Below are the summary statistics for virginica
 summary(iris[iris$Species == "virginica",])
 ```
 
@@ -224,7 +225,7 @@ ggplot(iris, mapping = aes(x = Species, y = Petal.Width)) + geom_boxplot(aes(fil
 
 ![](545_hw1_rmarkdown_dataset_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
-The package ggplot2 offers many other informative plots that we can use. Let's look at a few. 
+The package ggplot2 offers many other informative plots that we can use. We will look at a few. 
 
 Let's first look at the violin plot.
 
@@ -238,11 +239,11 @@ ggplot(iris, aes(x=Species, y=Petal.Width)) + geom_violin(aes(fill=Species)) + l
 
 ![](545_hw1_rmarkdown_dataset_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
-In the above image, the violin plots look more like a lamps and don't appear to provide anything useful. Didn't we say they were like box plots? Therefore, shouldn't violin plots provide the same information as box plots? Note that we can add box plots to the violin plots as follows...
+In the above image, the violin plots look like lamps and don't appear to provide anything useful. Didn't we say they were like box plots? Therefore, shouldn't violin plots easily provide the same information as box plots? One solution to this is to add box plots to the violin plots (as in the code below). Hence, we have the data distributions of the samples from the violin plots and clear markers of the five number summary from the box plots. 
 
 
 ```r
-# Note we only added the geom_boxplot() code. Nothing else changed from above. 
+# Note we only added the geom_boxplot(width=0.2) code to the above code to add the box plots. Easy. 
 ggplot(iris, aes(x=Species, y=Petal.Width)) + geom_violin(aes(fill=Species)) + geom_boxplot(width=0.2) + labs(x = "Petal Width", y = "Petal Length") + ggtitle("Violin Plots of Petal Widths vs. Petal Lengths for Iris Data Set")
 ```
 
@@ -313,6 +314,6 @@ summary(fit)
 ## F-statistic: 734.4 on 3 and 146 DF,  p-value: < 2.2e-16
 ```
 
-### 6. Conclusions
+### Conclusions
 
-We investigated the iris data set by looking at a couple of the key functions, plots and models that showed us some of the relationships between the variables. There is still a lot more that can be done, but that can be saved for a tim
+We investigated the iris data set by looking at a couple of the key functions, plots and models that showed us some of the relationships between the variables. Hopefully this provided a flavour of the analysis that can be done on the iris data set.

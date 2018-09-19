@@ -10,6 +10,12 @@ This repository is for my Homework #1 for my [STAT 545A](http://stat545.com) cla
 
 Navigation for other important locations for Homework #1 is below.
 
+|               | Major Links for Homework #1 |
+| ------------- |-------------|
+|  :seedling:   | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.md)| 
+|  :seedling:   | [Iris Data Exploration (.Rmd)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.Rmd)| 
+| v :seedling:  | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.html)|
+
  | Major Links for Homework #1 |
 ------------ | -------------
  :seedling: | [Iris Data Exploration (.md)](https://github.com/STAT545-UBC-students/hw01-rachlobay/blob/master/545_hw1_rmarkdown_dataset.md) 

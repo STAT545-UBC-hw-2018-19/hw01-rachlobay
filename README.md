@@ -85,7 +85,6 @@ A checklist to complete if you want to use the YouTube video method above:
 - [ ] Find what your video code is from its url. For example, to get to the Jack Sparrow clip above the video code **isdvdrCPr3gDQ**
 - [ ] Copy and paste the video code where it says **YOUTUBE_ID** in the code block above.
 - [x] That's all folks!
-- [x] That's all folks!
 
 ## The end.
 ![savvy](images/savvy.gif)

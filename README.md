@@ -60,6 +60,13 @@ Navigation for places on this page is below.
 ### A few other things I enjoy
 :airplane: :cat: :dog: :sunny: :coffee: :soccer: 
 
+Relating to the cat and dog emojis, here are some pics of my pets, Tiger and Rosie. 
+
+|     Tiger     | Rosie       |
+| ------------- |-------------|
+| ![I Regret Nothing](images/Tiger.JPG) | ![I Regret Nothing](images/Rosie.JPG) |
+
+
 ### Pirates of the Caribbean
 
 Pirates of the Caribbean is a very quotable movie:
